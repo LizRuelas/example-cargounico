@@ -7,18 +7,16 @@ header('Content-Type: application/json');
 
 use Culqi\Culqi;
 
-$SECRET_API_KEY = 'sk_test_MC8mbT7XkJ4qRi6n';
+$SECRET_API_KEY = 'sk_test_F3wDa6xwYfrYoIXi';
 $culqi = new Culqi(array('api_key' => $SECRET_API_KEY));
 try {
   // Creando Cargo a una tarjeta
   $charge = $culqi->Charges->create(
       array(
-        "amount" => 3000,
+        "amount" => 300000,
         "currency_code" => "PEN",
         "email" => $_POST["email"],
-        "source_id" => $_POST["token"],
-        "installments" => $_POST["cuotas"],
-        "capture" => "false"
+        "source_id" => $_POST["token"]
       )
   );
   // Response

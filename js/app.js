@@ -1,5 +1,5 @@
 $("#response-panel").hide();
-Culqi.publicKey = 'pk_test_Rp2uV5dXI3quFq2X';
+Culqi.publicKey = 'pk_test_LlPkJ6CtgcJ946m9';
 // Culqi.container = "check";
 Culqi.options({
   style: {
